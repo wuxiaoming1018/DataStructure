@@ -50,6 +50,7 @@ public class Shares {
      * p(i)表示第i天的报价
      * minValue表示前i-1天的最低价格(买入价格)
      * f(i) = max(f(i-1),p(i)-minValue)
+     * minValue = min(p(i),minValue);
      * <p>
      * 关键：只交易一次
      */
